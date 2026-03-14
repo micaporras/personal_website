@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Google_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "./Components/NavBar/navbar";
 
-const googleSans = Google_Sans({
-  variable: "--font-google-sans",
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -20,8 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${googleSans.variable} antialiased`}
+        className={`${inter.variable} antialiased`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
