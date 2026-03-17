@@ -1,7 +1,11 @@
 "use client"
 import React, { useState } from 'react'
 import Link from 'next/link'
+
 import Navlink from './navlink'
+import Overlay from './overlay'
+
+import { RiMenuLine, RiCloseLine } from '@remixicon/react'
 
 const navLinks = [
   {
@@ -23,10 +27,35 @@ const navLinks = [
 ]
 
 function Navbar() {
+  const [navbarOpen, setNavbarOpen] = useState(false)
+
   return (
     <nav className="border-b-neutral-300 border-b-2 fixed top-0 left-0 right-0 z-10 bg-neutral-100">
       <div className="flex flex-wrap items-center justify-between mx-1 p-2">
         <Link href={"/"} className="text-4xl text-[var(--prim)] font-extrabold pl-3">mclrrn</Link>
+        
+        <div className="menu-mobile md:hidden flex">
+          {
+            !navbarOpen ? (
+              <button 
+              onClick={() => setNavbarOpen(true)} 
+              className="border-(--sec) border-2 rounded active:opacity-60 p-1.5"
+              aria-label="Open Menu"
+              >
+                <RiMenuLine className="h-5 w-6 text-(--sec)"/>
+              </button>
+            ) : (
+              <button 
+              onClick={() => setNavbarOpen(false)} 
+              className="active:opacity-60"
+              aria-label="Close Menu"
+              >
+                <RiCloseLine className="h-8 w-10 text-(--sec)"/>
+              </button>
+            )
+          }
+        </div>
+        
         <div className="menu hidden md:block md:w-auto" id="navbar">
           <ul className="flex p-2 md:p-0 md:flex-row md:space-x-3">
             {navLinks.map((link, index) => (
@@ -36,7 +65,11 @@ function Navbar() {
             ))}
           </ul>
         </div>
+
       </div>
+
+      {navbarOpen ? <Overlay links={navLinks} /> : null}
+      
     </nav>
   )
 }

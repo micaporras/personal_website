@@ -8,7 +8,7 @@ type NavlinkProps = {
 
 function Navlink({ href, title }: NavlinkProps) {
   return (
-    <Link href={href} className="block text-lg text-(--sec) font-semibold p-2 hover:opacity-75">{title}</Link>
+    <Link href={href} className="block text-lg text-(--sec) font-semibold p-2 hover:opacity-75 active:opacity-75">{title}</Link>
   )
 }
 
