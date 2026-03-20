@@ -30,19 +30,19 @@ function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false)
 
   return (
-    <nav className="border-b-neutral-300 border-b-2 fixed top-0 left-0 right-0 z-10 bg-neutral-100">
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-(--body)">
       <div className="flex flex-wrap items-center justify-between mx-1 p-2">
-        <Link href={"/"} className="text-4xl text-[var(--prim)] font-extrabold pl-3">mclrrn</Link>
+        <Link href={"/"} className="inter text-4xl text-[var(--prim)] font-extrabold pl-3">mclrrn</Link>
         
         <div className="menu-mobile md:hidden flex">
           {
             !navbarOpen ? (
               <button 
               onClick={() => setNavbarOpen(true)} 
-              className="border-(--sec) border-2 rounded active:opacity-60 p-1.5"
+              className="border-(--prim) border-2 rounded active:opacity-60 p-1.5"
               aria-label="Open Menu"
               >
-                <RiMenuLine className="h-5 w-6 text-(--sec)"/>
+                <RiMenuLine className="h-5 w-6 text-(--prim)"/>
               </button>
             ) : (
               <button 
@@ -50,7 +50,7 @@ function Navbar() {
               className="active:opacity-60"
               aria-label="Close Menu"
               >
-                <RiCloseLine className="h-8 w-10 text-(--sec)"/>
+                <RiCloseLine className="h-8 w-10 text-(--prim)"/>
               </button>
             )
           }

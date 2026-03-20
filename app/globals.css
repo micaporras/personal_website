@@ -1,17 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @import "tailwindcss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 @import 'remixicon/fonts/remixicon.css';
 
 :root {
-    --prim: #F55333;
-    --sec: #FF775C;
+    --prim: #075056;
+    --sec: #F55333;
     --text: #1C1C1D;
-    --body: #F6F6F6;
+    --body: #D3DDDE;
+    --dark: #243037;
     --white: #FFFFFF;
     --black: #000000;
 
+    --navbar: #d8d8d8;
+    --gray: #808080;
+    
     --Inter: "Inter", sans-serif;
+    --Playfair: "Playfair Display", serif;
 
 }
 
@@ -19,6 +24,15 @@ body {
     background-color: var(--body);
 }
 
-.Inter {
+.inter {
     font-family: var(--Inter);
+}
+
+.playfair {
+    font-family: var(--Playfair);
+}
+
+h1, h2, h3 {
+    font-family: var(--Inter);
+    color: var(--prim);
 }
