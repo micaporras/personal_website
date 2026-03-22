@@ -13,8 +13,8 @@ const navLinks = [
     title: "About"
   },
   {
-    href: "#stack",
-    title: "Stack"
+    href: "#skills",
+    title: "Skills"
   },
   {
     href: "#projects",

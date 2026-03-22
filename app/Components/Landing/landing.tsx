@@ -30,7 +30,7 @@ function Landing() {
             </div>
 
             <div className="flex flex-col w-full justify-center items-center md:items-start">
-                <h1 className="inter font-extrabold text-(--prim) lg:text-7xl md:text-5xl text-3xl md:pt-0 md:pb-3 pt-3 pb-1">Hi! I am Mica Lorraine</h1>
+                <h1 className="font-extrabold text-(--prim) lg:text-7xl md:text-5xl text-3xl md:pt-0 md:pb-3 pt-3 pb-1">Hi! I am Mica Lorraine</h1>
                 
                 <TypeAnimation
                 sequence={[
