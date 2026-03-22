@@ -8,14 +8,15 @@ type NavItem = {
 
 type overlayProps = {
     links : NavItem[]
+  onNavigate?: () => void
 }
 
-function Overlay({ links }: overlayProps) {
+function Overlay({ links, onNavigate }: overlayProps) {
   return (
     <ul className="flex flex-col items-center">
         {links.map((link, index) => (
             <li key={index}>
-                <NavLink href={link.href} title={link.title} />
+        <NavLink href={link.href} title={link.title} onNavigate={onNavigate} />
             </li>
         ))}
     </ul>

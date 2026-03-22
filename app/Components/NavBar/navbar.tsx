@@ -28,6 +28,7 @@ const navLinks = [
 
 function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false)
+  const handleNavigate = () => setNavbarOpen(false)
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-10 bg-(--body)">
@@ -60,7 +61,7 @@ function Navbar() {
           <ul className="flex p-2 md:p-0 md:flex-row md:space-x-3">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <Navlink href={link.href} title={link.title} />
+                <Navlink href={link.href} title={link.title} onNavigate={handleNavigate} />
               </li>
             ))}
           </ul>
@@ -68,7 +69,7 @@ function Navbar() {
 
       </div>
 
-      {navbarOpen ? <Overlay links={navLinks} /> : null}
+      {navbarOpen ? <Overlay links={navLinks} onNavigate={handleNavigate} /> : null}
       
     </nav>
   )
