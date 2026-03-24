@@ -36,7 +36,7 @@ function Landing() {
                 sequence={[
                     // Same substring at the start will only be typed out once, initially
                     'A Computer Engineer',
-                    1000, // wait 1s before replacing "Mice" with "Hamsters"
+                    1000, 
                     'A Software Developer',
                     1000,
                     'A Tech Enthusiast',
@@ -50,7 +50,7 @@ function Landing() {
                 className="inter font-extrabold text-(--sec) lg:text-5xl md:text-3xl text-xl md:pt-0 md:pb-3"
                 />
 
-                <p className="p-2 md:p-0 md:pr-2 playfair md:text-lg text-sm font-medium tracking-wide text-justify">
+                <p className="p-2 md:p-0 md:pr-2 md:text-lg text-sm font-medium tracking-wide text-justify">
                 With experience in software development and building technology-driven applications. 
                 Skilled in both frontend and backend systems, with strong problem-solving and collaboration abilities. 
                 Passionate about creating efficient, scalable, and user-friendly applications.

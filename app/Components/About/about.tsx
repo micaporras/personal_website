@@ -34,20 +34,20 @@ function About() {
               </div>
 
               <div className="pl-16">
-                <div className="bg-(--white) shadow-md rounded-xl p-6 hover:scale-105 transition-all duration-300">
-                  <div className="flex items-center gap-2 text-sm text-(--prim) pb-2">
-                    <span className="px-3 py-1 rounded-full bg-(--prim-light) font-medium">
+                <div className="bg-(--white) shadow-xl rounded-md p-6 hover:scale-105 transition-all duration-300">
+                  <div className="flex items-center gap-2 text-sm text-(--white) pb-2">
+                    <span className="px-3 py-1 rounded-full bg-(--prim) font-medium">
                       {item.period}
                     </span>
                   </div>
 
                   <h4 className="text-xl font-semibold pb-1">{item.title}</h4>
                   <p className="text-(--gray) text-sm pb-3">{item.place}</p>
-                  <p className="text-(--gray) text-sm pb-4">{item.description}</p>
+                  <p className="text-(--gray) text-sm pb-4 text-justify">{item.description}</p>
 
                   <div className="flex flex-wrap gap-2">
                     {(item.tags ?? item.tags ?? []).map((tag: string) => (
-                      <span key={tag} className="text-xs px-2 py-1 rounded-md bg-(--prim) text-white">
+                      <span key={tag} className="text-xs px-2 py-1 rounded-xl bg-(--prim-light) text-(--prim)">
                         {tag}
                       </span>
                     ))}
@@ -73,18 +73,18 @@ function About() {
                       </div>
 
                       <div className="bg-(--white) shadow-md rounded-xl p-6 hover:scale-105 transition-all duration-300">
-                        <div className="flex items-center gap-2 text-sm text-(--prim) mb-2">
-                          <span className="px-3 py-1 rounded-full bg-(--prim-light) font-medium">
+                        <div className="flex items-center gap-2 text-sm text-(--white) mb-2">
+                          <span className="px-3 py-1 rounded-full bg-(--prim) font-medium">
                             {item.period}
                           </span>
                         </div>
                         <h4 className="text-xl font-semibold mb-1">{item.title}</h4>
                         <p className="text-(--gray) text-sm mb-3">{item.place}</p>
-                        <p className="text-(--gray) text-sm mb-4">{item.description}</p>
+                        <p className="text-(--gray) text-sm mb-4 text-justify">{item.description}</p>
 
                         <div className="flex flex-wrap gap-2">
                           {(item.tags ?? item.tags ?? []).map((tag: string) => (
-                            <span key={tag} className="text-xs px-2 py-1 rounded-md bg-(--prim) text-white">
+                            <span key={tag} className="text-xs px-2 py-1 rounded-xl bg-(--prim-light) text-(--prim)">
                               {tag}
                             </span>
                           ))}
