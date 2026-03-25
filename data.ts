@@ -161,18 +161,48 @@ export const frontendAndBackend = [
 
 export const tools = [
     {
-        name: "What",
-        alt: "React Logo",
-        icon: "/icons/react.svg"
-    }
+        name: "Git",
+        alt: "Git Logo",
+        icon: "/icons/git.svg"
+    },
+    {
+        name: "GitHub",
+        alt: "GitHub Logo",
+        icon: "/icons/github.svg"
+    },
+    {
+        name: "GitLab",
+        alt: "GitLab Logo",
+        icon: "/icons/gitlab.svg"
+    },
+    {
+        name: "React",
+        alt: "React logo",
+        icon: "/icons/excel.svg"
+    },
+    {
+        name: "Git",
+        alt: "Git Logo",
+        icon: "/icons/wordpress.svg"
+    },
+    {
+        name: "GitHub",
+        alt: "GitHub Logo",
+        icon: "/icons/googlecloud.svg"
+    },
+    {
+        name: "GitLab",
+        alt: "GitLab Logo",
+        icon: "/icons/gitlab.svg"
+    },
 ]
 
 export const devPractices = [
     {
         name: "React",
         alt: "React logo",
-        icon: "/icons/react.svg"
-    }
+        icon: "/icons/excel.svg"
+    },
 ]
 
 export const softSkills = [
