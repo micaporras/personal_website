@@ -95,3 +95,90 @@ export const projects = [
         isDeployed: false,
     },
 ]
+
+export const frontendAndBackend = [
+    {
+        name: "HTML5",
+        alt: "HTML5 Logo",
+        icon: "/icons/html5.svg"
+    },
+    {
+        name: "CSS3",
+        alt: "CSS3 Logo",
+        icon: "/icons/css.svg"
+    },
+    {
+        name: "Javascript",
+        alt: "Javascript Logo",
+        icon: "/icons/javascript.svg"
+    },
+    {
+        name: "React",
+        alt: "React Logo",
+        icon: "/icons/react.svg"
+    },
+    {
+        name: "Bootstrap",
+        alt: "Bootstrap Logo",
+        icon: "/icons/bootstrap.svg"
+    },
+    {
+        name: "SCSS",
+        alt: "SCSS Logo",
+        icon: "/icons/sass.svg"
+    },
+    {
+        name: "Typescript",
+        alt: "Typescript Logo",
+        icon: "/icons/typescript.svg"
+    },
+    {
+        name: "TailwindCSS",
+        alt: "TailwindCSS Logo",
+        icon: "/icons/tailwindcss.svg"
+    },
+    {
+        name: "MySQL",
+        alt: "MySQL Logo",
+        icon: "/icons/mysql.svg"
+    },
+    {
+        name: "PHP",
+        alt: "PHP Logo",
+        icon: "/icons/php.svg"
+    },
+    {
+        name: "Laravel",
+        alt: "Laravel Logo",
+        icon: "/icons/laravel.svg"
+    },
+    {
+        name: "Python",
+        alt: "Python Logo",
+        icon: "/icons/python.svg"
+    }
+]
+
+export const tools = [
+    {
+        name: "What",
+        alt: "React Logo",
+        icon: "/icons/react.svg"
+    }
+]
+
+export const devPractices = [
+    {
+        name: "React",
+        alt: "React logo",
+        icon: "/icons/react.svg"
+    }
+]
+
+export const softSkills = [
+    {
+        name: "React",
+        alt: "React logo",
+        icon: "/icons/react.svg"
+    }
+]

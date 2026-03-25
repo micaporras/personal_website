@@ -29,7 +29,7 @@ function About() {
 
           {items.map((item, index) => (
             <div key={index} className="relative flex flex-col gap-8 pb-8">
-              <div className="absolute left-4 w-8 h-8 -translate-x-1/2 rounded-full bg-(--body) border-2 border-(--sec) flex items-center justify-center z-10">
+              <div className="absolute left-4 w-8 h-8 -translate-x-1/2 rounded-full bg-(--body) border-2 border-(--sec) flex items-center justify-center z-1">
                 {renderIcon(type)}
               </div>
 

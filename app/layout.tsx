@@ -13,7 +13,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Personal Website",
+  title: "mclrrn",
   description: "A personal website built with Next.js and Tailwind CSS.",
 };
 

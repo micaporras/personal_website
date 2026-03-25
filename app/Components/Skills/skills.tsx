@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './card'
 
+
 function Skills() {
     return (
 		<section id="skills" className="min-h-screen scroll-mt-24 pb-20">
@@ -9,7 +10,7 @@ function Skills() {
 				<Card title="Frontend and Backend"/>
 				<Card title="Tools"/>
 				<Card title="Development Practices"/>
-				<Card title="Soft Skills"/>
+				<Card title="Soft Skills" />
 			</div>
 		</section>
     )
