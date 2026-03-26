@@ -47,14 +47,14 @@ function Card({ title, collaboration, description, img, stack, website, github, 
                 {isDeployed && 
                 <button 
                 onClick={() => window.open(website, '_blank')} 
-                className="text-sm text-(--white) font-normal w-full bg-(--prim) px-3 py-1 rounded-md cursor-pointer flex flex-row items-center justify-center gap-2 hover:opacity-80 transition-opacity duration-300"
+                className="text-sm text-(--white) font-normal w-full bg-(--prim) px-3 py-1 rounded-md cursor-pointer flex flex-row items-center justify-center gap-2 hover:opacity-80 transition-all duration-300"
                 aria-label={`View ${title} website`}
                 >
                     <RiExternalLinkFill className="w-4 h-4"/> Live Demo
                 </button>}
                 <button 
                 onClick={() => window.open(github, '_blank')} 
-                className="text-sm text-(--prim) font-normal w-full bg-transparent border px-3 py-1 rounded-md cursor-pointer flex flex-row items-center justify-center gap-2 hover:opacity-80 transition-opacity duration-300"
+                className="text-sm text-(--prim) font-normal w-full bg-transparent border px-3 py-1 rounded-md cursor-pointer flex flex-row items-center justify-center gap-2 hover:border-(--prim-light) hover:bg-(--prim-light) transition-all duration-300"
                 aria-label={`View ${title} github repository`}
                 >
                     {isInGitHub ? <RiGithubFill className="w-4 h-4"/> : <RiGitlabFill className="w-4 h-4"/>} Repo
