@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from './card'
-import Icon from './icon'
+import Icon from './iconcard'
 import {  RiGoogleFill, RiPhoneFill, RiMapPinFill, RiGithubFill, RiGitlabFill, RiLinkedinBoxFill, RiSendPlaneFill } from '@remixicon/react';
 
 
