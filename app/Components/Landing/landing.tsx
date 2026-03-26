@@ -30,7 +30,7 @@ function Landing() {
             </div>
 
             <div className="flex flex-col w-full justify-center items-center md:items-start">
-                <h1 className="font-extrabold text-(--prim) lg:text-7xl md:text-5xl text-3xl md:pt-0 md:pb-3 pt-3 pb-1">Hi! I am Mica Lorraine</h1>
+                <h1 className="font-extrabold text-(--prim) 2xl:text-6xl md:text-5xl text-3xl md:pt-0 md:pb-3 pt-3 pb-1">Hi! I am Mica Lorraine</h1>
                 
                 <TypeAnimation
                 sequence={[
@@ -47,10 +47,10 @@ function Landing() {
                 wrapper="span"
                 speed={50}
                 repeat={Infinity}
-                className="inter font-extrabold text-(--sec) lg:text-5xl md:text-3xl text-xl md:pt-0 md:pb-3"
+                className="inter font-extrabold text-(--gray) 2xl:text-4xl md:text-3xl text-xl md:pt-0 md:pb-3"
                 />
 
-                <p className="p-2 md:p-0 md:pr-2 md:text-lg text-sm font-medium tracking-wide text-justify">
+                <p className="p-2 md:p-0 md:pr-2 md:text-lg text-sm text-(--gray) font-medium tracking-wide text-justify">
                 With experience in software development and building technology-driven applications. 
                 Skilled in both frontend and backend systems, with strong problem-solving and collaboration abilities. 
                 Passionate about creating efficient, scalable, and user-friendly applications.

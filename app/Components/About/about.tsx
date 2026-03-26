@@ -11,9 +11,9 @@ function About() {
 
     const renderIcon = (type: TimelineType) => {
       if (type === 'Education') {
-      return <RiSchoolLine className="h-4 w-4 text-(--sec)" />
+      return <RiSchoolLine className="h-4 w-4 text-(--prim)" />
       } else {
-        return <RiBriefcaseLine className="h-4 w-4 text-(--sec)" />
+        return <RiBriefcaseLine className="h-4 w-4 text-(--prim)" />
       }
     }
 
@@ -29,7 +29,7 @@ function About() {
 
           {items.map((item, index) => (
             <div key={index} className="relative flex flex-col gap-8 pb-8">
-              <div className="absolute left-4 w-8 h-8 -translate-x-1/2 rounded-full bg-(--body) border-2 border-(--sec) flex items-center justify-center z-1">
+              <div className="absolute left-4 w-8 h-8 -translate-x-1/2 rounded-full bg-(--body) border-2 border-(--prim) flex items-center justify-center z-1">
                 {renderIcon(type)}
               </div>
 
@@ -67,7 +67,7 @@ function About() {
                   {items.map((item, index) => (
                     <article key={index} className="w-80 shrink-0">
                       <div className="pb-3 flex items-center justify-center gap-2">
-                        <span className="flex h-8 w-8 items-center justify-center rounded-full bg-(--body) border-2 border-(--sec)">
+                        <span className="flex h-8 w-8 items-center justify-center rounded-full bg-(--body) border-2 border-(--prim)">
                           {renderIcon(type)}
                         </span>
                       </div>

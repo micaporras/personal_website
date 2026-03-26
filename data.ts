@@ -51,7 +51,7 @@ export const about = [
 
 export const projects = [
     {
-        title: "Personal Website",
+        title: "mclrrn",
         collaboration: "Personal",
         description: "A personal website built using Next.js and Tailwind CSS to showcase my skills, projects, and experience.",
         img: "/images/bg.jpg",
@@ -84,7 +84,7 @@ export const projects = [
         isDeployed: true,
     },
     {
-        title: "Iris: Your Personal Lookout",
+        title: "Iris",
         collaboration: "Collaborative",
         description: "A web-based application",
         img: "/images/bg.jpg",
@@ -176,39 +176,124 @@ export const tools = [
         icon: "/icons/gitlab.svg"
     },
     {
-        name: "React",
-        alt: "React logo",
-        icon: "/icons/excel.svg"
+        name: "VS Code",
+        alt: "Visual Studio Code logo",
+        icon: "/icons/vscode.svg"
     },
     {
-        name: "Git",
-        alt: "Git Logo",
-        icon: "/icons/wordpress.svg"
+        name: "Vite",
+        alt: "Vite Logo",
+        icon: "/icons/vite.svg"
     },
     {
-        name: "GitHub",
-        alt: "GitHub Logo",
+        name: "Firebase",
+        alt: "Firebase Logo",
+        icon: "/icons/firebase.svg"
+    },
+    {
+        name: "Figma",
+        alt: "Figma Logo",
+        icon: "/icons/figma.svg"
+    },
+    {
+        name: "GCP",
+        alt: "Google Cloud Platform",
         icon: "/icons/googlecloud.svg"
     },
     {
-        name: "GitLab",
-        alt: "GitLab Logo",
-        icon: "/icons/gitlab.svg"
+        name: "Word",
+        alt: "Microsoft Word Logo",
+        icon: "/icons/word.svg"
+    },
+    {
+        name: "Excel",
+        alt: "Microsoft Excel Logo",
+        icon: "/icons/excel.svg"
+    },
+    {
+        name: "PowerPoint",
+        alt: "Microsoft Powerpoint logo",
+        icon: "/icons/powerpoint.svg"
+    },
+    {
+        name: "Illustrator",
+        alt: "Adobe Illustrator Logo",
+        icon: "/icons/illustrator.svg"
+    },
+    {
+        name: "Photoshop",
+        alt: "Adobe Photoshop Logo",
+        icon: "/icons/photoshop.svg"
+    },
+    {
+        name: "Jira",
+        alt: "Jira Logo",
+        icon: "/icons/jira.svg"
+    },
+    {
+        name: "Arduino IDE",
+        alt: "Arduino IDE Logo",
+        icon: "/icons/arduino.svg"
+    },
+    {
+        name: "WordPress",
+        alt: "WordPress Logo",
+        icon: "/icons/wordpress.svg"
     },
 ]
 
 export const devPractices = [
     {
-        name: "React",
-        alt: "React logo",
-        icon: "/icons/excel.svg"
+        name: "OOP",
+        alt: "Object Oriented Programming Logo",
+        icon: "/images/oop.png"
+    },
+    {
+        name: "Responsive Development",
+        alt: "Responsive Development Logo",
+        icon: "/images/responsive.png"
+    },
+    {
+        name: "Version Control",
+        alt: "Version Control Logo",
+        icon: "/images/vc.png"
+    },
+    {
+        name: "CI/CD Concepts",
+        alt: "CI/CD Concepts Logo",
+        icon: "/images/cicd.png"
+    },
+    {
+        name: "Clean Code Principles",
+        alt: "Clean Code Principles Logo",
+        icon: "/images/clean-code.png"
     },
 ]
 
 export const softSkills = [
     {
-        name: "React",
-        alt: "React logo",
-        icon: "/icons/react.svg"
-    }
+        name: "Effective Communication",
+        alt: "Effective Communication Logo",
+        icon: "/images/communicative.png"
+    },
+    {
+        name: "Problem Solving",
+        alt: "Problem Solving Logo",
+        icon: "/images/problem-solving.png"
+    },
+    {
+        name: "Collaboration & Teamwork",
+        alt: "Collaboration & Teamwork Logo",
+        icon: "/images/teamwork.png"
+    },
+    {
+        name: "Detail-Oriented",
+        alt: "Detail-Oriented Logo",
+        icon: "/images/detail-oriented.png"
+    },
+    {
+        name: "Adaptable",
+        alt: "Adaptable Logo",
+        icon: "/images/adaptable.png"
+    },
 ]
