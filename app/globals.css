@@ -66,3 +66,8 @@ input:focus, textarea:focus {
     font-family: var(--Inter);
 }
 
+button:disabled {
+    background-color: var(--prim);
+    cursor: not-allowed;
+    opacity: 0.4;
+}

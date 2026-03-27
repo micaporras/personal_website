@@ -31,7 +31,7 @@ function Navbar() {
   const handleNavigate = () => setNavbarOpen(false)
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-(--body)">
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-(--body) shadow">
       <div className="flex flex-wrap items-center justify-between mx-1 p-2">
         <Link href={"/"} className="inter text-4xl text-[var(--prim)] font-extrabold pl-3">mclrrn</Link>
         

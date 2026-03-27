@@ -63,9 +63,9 @@ function About() {
               <div className="relative min-w-max px-2 pt-10">
                 <div className="absolute left-10 right-10 top-14 h-px bg-(--prim) opacity-35" />
 
-                <div className="relative flex gap-6 xl:gap-20 justify-center">
+                <div className="relative flex gap-6 2xl:gap-20 justify-center">
                   {items.map((item, index) => (
-                    <article key={index} className="w-80 shrink-0">
+                    <article key={index} className="w-80 md:w-70 2xl:w-85 shrink-0">
                       <div className="pb-3 flex items-center justify-center gap-2">
                         <span className="flex h-8 w-8 items-center justify-center rounded-full bg-(--body) border-2 border-(--prim)">
                           {renderIcon(type)}
@@ -101,7 +101,7 @@ function About() {
     }
 
     return (
-      <section id="about" className="min-h-screen scroll-mt-18 pb-20">
+      <section id="about" className="min-h-screen scroll-mt-18 pb-20 md:px-10 px-2">
           <h1 className="text-3xl font-bold text-center pb-6">About Me</h1>
 
           {renderTimeline(educationTimeline, 'Education', 'Education')}

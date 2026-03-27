@@ -1,12 +1,12 @@
 import React from 'react'
 import Card from './card'
-import Icon from './iconcard'
+import Socials from '../Shared/socials'
 import {  RiGoogleFill, RiPhoneFill, RiMapPinFill, RiGithubFill, RiGitlabFill, RiLinkedinBoxFill, RiSendPlaneFill } from '@remixicon/react';
 
 
 function ContactMe() {
   return (
-    <section id="contactme" className="min-h-screen scroll-mt-24 pb-20">
+    <section id="contactme" className="min-h-screen scroll-mt-24 pb-20 md:px-10 px-2">
       <h1 className="text-3xl font-bold text-center">Contact Me</h1>
 
       <div className="w-[80%] mx-auto pt-10">
@@ -16,7 +16,7 @@ function ContactMe() {
             <h4 className="text-xl font-semibold">Let's Connect</h4>
             <p className="text-sm text-(--gray) text-justify pb-4">
               Whether you have a question, want to discuss a project, collaborate on something exciting, or 
-              just want to say hi, feel free to reach out. I look forward to hearing from you!
+              just want to say hi, feel free to reach out. I will try my best to respond as soon as possible. Looking forward to connecting with you!
             </p>
 
             <Card 
@@ -42,17 +42,17 @@ function ContactMe() {
 
             <h4 className="text-xl font-semibold pt-4">Follow Me</h4>
             <div className="flex flex-row gap-2 items-center">
-              <Icon 
+              <Socials 
               icon={<RiGithubFill />}
               href="https://github.com/micaporras"
               />
 
-              <Icon 
+              <Socials
               icon={<RiGitlabFill />}
               href="https://gitlab.com/porrasmica15"
               />
 
-              <Icon 
+              <Socials
               icon={<RiLinkedinBoxFill />}
               href="https://www.linkedin.com/in/mica-lorraine-d-porras/"
               />
@@ -77,7 +77,7 @@ function ContactMe() {
                     <label htmlFor="message" className="block text-sm font-medium">Message</label>
                     <textarea id="message" name="message" rows={4} placeholder="Your Message..." required />
                 </div>
-                <button type="submit" className="flex flex-row gap-4 justify-center items-center w-full bg-(--prim) text-(--white) py-2 text-sm rounded-md hover:opacity-80 transition-all duration-300 cursor-pointer">
+                <button type="submit" className="flex flex-row gap-2 justify-center items-center w-full bg-(--prim) text-(--white) py-2 text-sm rounded-md hover:opacity-80 transition-all duration-300 cursor-pointer" disabled>
                     <RiSendPlaneFill className="w-4 h-4"/> Send Message
                 </button>
             </form>
