@@ -14,7 +14,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "mclrrn",
-  description: "A personal website built with Next.js and Tailwind CSS.",
+  description: "A portfolio website built with Next.js and Tailwind CSS.",
 };
 
 export default function RootLayout({
@@ -24,6 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" type="image" aria-label="website logo" href="/images/logo.png"/>
       <body
         className={`${inter.variable} ${playfair.variable} antialiased`}
       >
