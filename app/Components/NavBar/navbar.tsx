@@ -2,8 +2,8 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 
-import Navlink from './navlink'
-import Overlay from './overlay'
+import Navlink from './NavLink'
+import Overlay from './Overlay'
 
 import { RiMenuLine, RiCloseLine } from '@remixicon/react'
 

@@ -1,11 +1,11 @@
 import React from 'react'
-import Socials from '../Shared/socials'
+import Socials from '../shared/Socials'
 import {  RiGoogleFill, RiGithubFill, RiLinkedinBoxFill, RiFacebookFill, RiInstagramFill  } from '@remixicon/react';
 
 function Footer() {
   return (
-    <footer className="bg-(--body) drop-shadow-sm mt-20">
-      <div className="flex flex-col items-center p-4 gap-4">
+    <footer className="bg-(--body) drop-shadow-sm">
+      <div className="flex flex-col items-center px-4 py-6 gap-4">
         <h3 className="font-extrabold text-xl">mclrrn</h3>
         <div className="flex gap-2">
           <Socials 

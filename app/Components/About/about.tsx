@@ -1,5 +1,6 @@
 import React from 'react'
 import { about } from '@/data' 
+import SectionHeader from '../shared/SectionHeader'
 
 import { RiSchoolLine, RiBriefcaseLine } from '@remixicon/react'
 
@@ -23,7 +24,7 @@ function About() {
       type: TimelineType) => {
       return (
         <div className="w-full">
-          <h2 className="text-xl font-bold text-start md:text-left lg:pb-0 py-6 pl-2">{title}</h2>
+          <h4 className="text-xl font-bold text-start md:text-left lg:pb-0 py-6 pl-2">{title}</h4>
           <div className="lg:hidden relative px-2 px-auto">
           <div className="absolute left-6 top-0 bottom-0 w-px bg-linear-to-r from-(--prim) to-(--prim) -translate-x-1/2" />
 
@@ -102,8 +103,7 @@ function About() {
 
     return (
       <section id="about" className="min-h-screen scroll-mt-18 pb-20 md:px-10 px-2">
-          <h1 className="text-3xl font-bold text-center pb-6">About Me</h1>
-
+          <SectionHeader title="About Me" />
           {renderTimeline(educationTimeline, 'Education', 'Education')}
           {renderTimeline(experienceTimeline, 'Experience', 'Experience')}
       </section>

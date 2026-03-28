@@ -1,13 +1,14 @@
 import React from 'react'
-import Card from './card'
-import Socials from '../Shared/socials'
+import SectionHeader from '../shared/SectionHeader'
+import Card from './Card'
+import Socials from '../shared/Socials'
 import {  RiGoogleFill, RiPhoneFill, RiMapPinFill, RiGithubFill, RiGitlabFill, RiLinkedinBoxFill, RiSendPlaneFill } from '@remixicon/react';
 
 
 function ContactMe() {
   return (
     <section id="contactme" className="min-h-screen scroll-mt-24 pb-20 md:px-10 px-2">
-      <h1 className="text-3xl font-bold text-center">Contact Me</h1>
+      <SectionHeader title="Contact Me" />
 
       <div className="w-[80%] mx-auto pt-10">
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto min-h-full">

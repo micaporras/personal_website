@@ -17,7 +17,7 @@ function Landing() {
     }
 
     return (
-        <section className="min-h-screen md:pt-0 pt-20 pb-10 md:px-10 px-2 lg:px-10 flex md:flex-row flex-col md:justify-center items-center gap-6 md:gap-4 lg:gap-8">
+        <section className="min-h-screen md:pt-0 pt-20 pb-20 md:px-10 px-2 lg:px-10 flex md:flex-row flex-col md:justify-center items-center gap-6 md:gap-4 lg:gap-8">
             <div className="flex flex-col w-full justify-center items-center pt-3 md:pt-5 gap-4 xl:gap-10">
                 <Image 
                 src = "/images/grad-image-2.png"

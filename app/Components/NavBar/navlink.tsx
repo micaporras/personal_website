@@ -36,7 +36,7 @@ function Navlink({ href, title, onNavigate }: NavlinkProps) {
     <Link
       href={href}
       onClick={handleClick}
-      className="block inter text-lg text-(--prim) font-semibold p-2 hover:opacity-75 active:opacity-75"
+      className="block inter text-md text-(--prim) font-semibold p-2 hover:opacity-75 active:opacity-75"
     >
       {title}
     </Link>
