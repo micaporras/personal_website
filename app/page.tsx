@@ -1,11 +1,11 @@
 "use client";
-import Navbar from "./Components/navbar/NavBar";
-import Landing from "./Components/landing/Landing";
-import About from './Components/about/About';
-import Skills from './Components/skills/Skills';
-import Projects from './Components/projects/Projects';
-import ContactMe from './Components/contact-me/ContactMe';
-import Footer from './Components/footer/Footer';
+import Navbar from "./components/navbar/NavBar";
+import Landing from "./components/landing/Landing";
+import About from './components/about/About';
+import Skills from './components/skills/Skills';
+import Projects from './components/projects/Projects';
+import ContactMe from './components/contact-me/ContactMe';
+import Footer from './components/footer/Footer';
 
 export default function Home() {
   return (
