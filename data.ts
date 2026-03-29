@@ -64,7 +64,7 @@ export const projects = [
     {
         title: "LEDice",
         collaboration: "Collaborative",
-        description: "A web-based dice roller application built with React and Firebase, allowing users to roll virtual dice for tabletop games.",
+        description: "A web-based dice roller application built with React and Firebase, allowing users to roll virtual dice for the color game or mix colors for color mixer.",
         img: "/images/bg.jpg",
         stack: ["React", "Firebase", "Bootstrap"],
         website: "https://ledice-66ce7.web.app/",
@@ -86,7 +86,7 @@ export const projects = [
     {
         title: "Iris",
         collaboration: "Collaborative",
-        description: "A web-based application",
+        description: "A web-based application  that helps one to be reminded of certain tasks that need to be done. It has a main feature of a To-Do List but offers much more features which ensures the users that not a single task will be neglected.",
         img: "/images/bg.jpg",
         stack: ["React", "Firebase", "Bootstrap"],
         website: "",
