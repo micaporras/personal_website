@@ -1,11 +1,50 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SectionHeader from '../shared/SectionHeader'
 import Card from './Card'
 import Socials from '../shared/Socials'
-import {  RiGoogleFill, RiPhoneFill, RiMapPinFill, RiGithubFill, RiGitlabFill, RiLinkedinBoxFill, RiSendPlaneFill } from '@remixicon/react';
+import {  RiGoogleFill, RiPhoneFill, RiMapPinFill, RiGithubFill, RiGitlabFill, RiLinkedinBoxFill, RiSendPlaneFill, RiCheckFill } from '@remixicon/react';
 
 
 function ContactMe() {
+  const [loading, setLoading] = useState(false)
+  const [success, setSuccess] = useState(false)
+
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+  })
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    })
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        body: JSON.stringify(form),
+      });
+
+      if (res.ok) {
+        setSuccess(true);
+        setForm({ name: "", email: "", subject: "", message: "" });
+      }
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setLoading(false);
+      setTimeout(() => setSuccess(false), 1000);
+    }
+  }
+
   return (
     <section id="contactme" className="min-h-screen scroll-mt-24 pb-20 md:px-10 px-2">
       <SectionHeader title="Contact Me" />
@@ -61,25 +100,25 @@ function ContactMe() {
           </div>
 
           <div>
-            <form className="flex flex-col gap-6 bg-(--white) rounded-md p-5">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-6 bg-(--white) rounded-md p-5">
                 <div>
                     <label htmlFor="name" className="block text-sm font-medium">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required />
+                    <input type="text" id="name" name="name" value={form.name} onChange={handleChange} placeholder="Your Name" required />
                 </div>
                 <div>
                     <label htmlFor="email" className="block text-sm font-medium">Email</label>
-                    <input type="email" id="email" name="email" placeholder="example@google.com" required />
+                    <input type="email" id="email" name="email" value={form.email} onChange={handleChange} placeholder="example@google.com" required />
                 </div>
                 <div>
                     <label htmlFor="subject" className="block text-sm font-medium">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="Your Inquiry" required />
+                    <input type="text" id="subject" name="subject" value={form.subject} onChange={handleChange} placeholder="Your Inquiry" required />
                 </div>
                 <div>
                     <label htmlFor="message" className="block text-sm font-medium">Message</label>
-                    <textarea id="message" name="message" rows={4} placeholder="Your Message..." required />
+                    <textarea id="message" name="message" value={form.message} onChange={handleChange} rows={4} placeholder="Your Message..." required />
                 </div>
-                <button type="submit" className="flex flex-row gap-2 justify-center items-center w-full bg-(--prim) text-(--white) py-2 text-sm rounded-md hover:opacity-80 transition-all duration-300 cursor-pointer" disabled>
-                    <RiSendPlaneFill className="w-4 h-4"/> Send Message
+                <button type="submit" className="flex flex-row gap-2 justify-center items-center w-full bg-(--prim) text-(--white) py-2 text-sm rounded-md hover:opacity-80 transition-all duration-300 cursor-pointer" disabled={loading}>
+                    {loading ? "Sending..." : success ? <><RiCheckFill className="w-4 h-4"/> Email Sent</> : <><RiSendPlaneFill className="w-4 h-4"/> Send Message</>}
                 </button>
             </form>
             </div>
