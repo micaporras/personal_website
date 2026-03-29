@@ -66,7 +66,7 @@ export const projects = [
         collaboration: "Collaborative",
         description: "A web-based dice roller application built with React and Firebase, allowing users to roll virtual dice for the color game or mix colors for color mixer.",
         img: "/images/bg.jpg",
-        stack: ["React", "Firebase", "Bootstrap"],
+        stack: ["React", "Firebase", "Bootstrap", "SCSS", "Arduino IDE"],
         website: "https://ledice-66ce7.web.app/",
         isInGitHub: true,
         github: "https://github.com/micaporras/ledice",
@@ -77,7 +77,7 @@ export const projects = [
         collaboration: "Collaborative",
         description: "A web-based laboratory equipment management system designed to monitor equipment usage, prevent loss, and improve resource allocation for the Computer Engineering department at the Polytechnic University of the Philippines.",
         img: "/images/bg.jpg",
-        stack: ["React", "Firebase", "Bootstrap"],
+        stack: ["React", "Firebase", "Bootstrap", "SCSS"],
         website: "https://cpe-lems.web.app/user/form",
         isInGitHub: false,
         github: "https://gitlab.com/porrasmica15/lems",
@@ -88,7 +88,7 @@ export const projects = [
         collaboration: "Collaborative",
         description: "A web-based application  that helps one to be reminded of certain tasks that need to be done. It has a main feature of a To-Do List but offers much more features which ensures the users that not a single task will be neglected.",
         img: "/images/bg.jpg",
-        stack: ["React", "Firebase", "Bootstrap"],
+        stack: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
         website: "",
         isInGitHub: true,
         github: "https://github.com/micaporras/iris",
@@ -113,8 +113,8 @@ export const frontendAndBackend = [
         icon: "/icons/javascript.svg"
     },
     {
-        name: "React",
-        alt: "React Logo",
+        name: "ReactJS",
+        alt: "ReactJS Logo",
         icon: "/icons/react.svg"
     },
     {
@@ -131,6 +131,11 @@ export const frontendAndBackend = [
         name: "Typescript",
         alt: "Typescript Logo",
         icon: "/icons/typescript.svg"
+    },
+    {
+        name: "NextJS",
+        alt: "NextJS Logo",
+        icon: "/icons/nextjs.svg"
     },
     {
         name: "TailwindCSS",
