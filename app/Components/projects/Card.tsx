@@ -26,8 +26,8 @@ function Card({ title, collaboration, description, img, stack, website, github, 
             src={img}
             alt={title}
             width={400}
-            height={300}
-            className="w-full h-full object-cover"
+            height={400}
+            className="w-full h-full object-fill"
             />
         </div>
 
