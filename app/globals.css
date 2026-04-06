@@ -6,8 +6,7 @@
 :root {
     --prim: #075056;
     --prim-light: #B0DAE1;
-    --sec: #F55333;
-    --text: #1C1C1D;
+    --text: #243037;
     --body: #D3DDDE;
     --dark: #243037;
     --white: #FFFFFF;
@@ -24,6 +23,7 @@
 body {
     background-color: var(--body);
     font-family: var(--Inter);
+    color: var(--text);
 }
 
 .inter {
