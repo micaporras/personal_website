@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# mclrrn
+
+A personal portfolio website built with Next.js, React, TypeScript, and Tailwind CSS. It presents my background, skills, projects, and contact details in a responsive single-page layout.
+
+Live site: https://mclrrn.vercel.app
+
+## Features
+
+- Landing section with a personal introduction
+- About section with education and experience history
+- Skills section for frontend, backend, and tools
+- Projects section with featured work and external links
+- Contact section with direct links and a message form
+- API-powered email submission using Resend
+- Responsive navigation with mobile menu support
+
+## Tech Stack
+
+- Next.js 
+- React 
+- TypeScript
+- Tailwind CSS 
+- Resend for contact form email delivery
+- Remix Icon and Iconify for icons
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18 or newer
+- npm, pnpm, yarn, or bun
+
+### Installation
+
+```bash
+npm install
+```
+
+### Run locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+### Start the production server
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Environment Variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The contact form uses Resend and expects the following environment variable:
 
-## Deploy on Vercel
+```bash
+RESEND_API_KEY=your_resend_api_key
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+If the key is missing, the contact API route at `app/api/contact/route.ts` will not be able to send emails.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Project Structure
+
+- `app/page.tsx` - main page composition
+- `app/layout.tsx` - global metadata and fonts
+- `app/globals.css` - global styles
+- `app/api/contact/route.ts` - contact form email endpoint
+- `app/Components/` - reusable UI sections and shared components
+- `data.ts` - portfolio content for about, projects, and skills
+
+## Contact
+
+- Email: porrasmica15@gmail.com
+- GitHub: https://github.com/micaporras
+- GitLab: https://gitlab.com/porrasmica15
+- LinkedIn: https://www.linkedin.com/in/mica-lorraine-d-porras/
+
+## Deployment
+
+This site is ready to deploy on Vercel or any platform that supports Next.js.
+
+## Notes
+
+- The site is designed as a personal portfolio, so most content is driven from `data.ts`.
+- The contact form posts to the local API route and sends mail through Resend.
