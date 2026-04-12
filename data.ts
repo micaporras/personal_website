@@ -37,15 +37,15 @@ export const about = [
         place: "LexMeet, Inc.",
         period: "2024",
         description: "Contributed to creating responsive and modern website designs tailored to client needs.",
-        tags: ["React", "Bootstrap", "JavaScript", "Figma", "GitLab"]
+        tags: ["React.js", "Bootstrap", "JavaScript", "Figma", "GitLab"]
     },
     {
         type: "Experience",
-        title: "System Developer",
+        title: "Full Stack Developer",
         place: "Polytechnic University of the Philippines",
         period: "2025",
         description: "Designed and developed a thesis project which is a web-based laboratory equipment management system to monitor equipment usage, prevent loss, and improve resource allocation.",
-        tags: ["React", "Firebase", "Bootstrap", "JavaScript", "SCSS", "Figma", "GitLab"]
+        tags: ["React.js", "Node.js", "Firebase", "Bootstrap", "JavaScript", "SCSS", "Figma", "GitLab"]
     },
 ]
 
@@ -55,7 +55,7 @@ export const projects = [
         collaboration: "Personal",
         description: "A personal website built using Next.js and Tailwind CSS to showcase my skills, projects, and experience.",
         img: "/images/mclrrn.png",
-        stack: ["Next.js", "Tailwind CSS", "TypeScript"],
+        stack: ["Next.js", "Tailwind CSS", "TypeScript", "Node.js", "Vercel"],
         website: "https://mclrrn.vercel.app",
         isInGitHub: true,
         github: "https://github.com/micaporras/personal_website",
@@ -66,7 +66,7 @@ export const projects = [
         collaboration: "Collaborative",
         description: "A web-based dice roller application built with React and Firebase, allowing users to roll virtual dice for the color game or mix colors for color mixer.",
         img: "/images/LEDice.png",
-        stack: ["React", "Firebase", "Bootstrap", "SCSS", "Arduino IDE"],
+        stack: ["React.js", "Node.js", "Firebase", "Bootstrap", "SCSS", "Arduino IDE"],
         website: "https://ledice-66ce7.web.app/",
         isInGitHub: true,
         github: "https://github.com/micaporras/ledice",
@@ -77,7 +77,7 @@ export const projects = [
         collaboration: "Collaborative",
         description: "A web-based laboratory equipment management system designed to monitor equipment usage, prevent loss, and improve resource allocation for the Computer Engineering department at the Polytechnic University of the Philippines.",
         img: "/images/CpELEMS.png",
-        stack: ["React", "Firebase", "Bootstrap", "SCSS"],
+        stack: ["React.js", "Node.js", "Firebase", "Bootstrap", "SCSS"],
         website: "https://cpe-lems.web.app/user/form",
         isInGitHub: false,
         github: "https://gitlab.com/porrasmica15/lems",
@@ -135,9 +135,14 @@ export const frontendAndBackend = [
         icon: "/icons/javascript.svg"
     },
     {
-        name: "ReactJS",
+        name: "React.js",
         alt: "ReactJS Logo",
         icon: "/icons/react.svg"
+    },
+    {
+        name: "Node.js",
+        alt: "Node.js Logo",
+        icon: "/icons/nodejs.svg"
     },
     {
         name: "Bootstrap",
@@ -155,7 +160,7 @@ export const frontendAndBackend = [
         icon: "/icons/typescript.svg"
     },
     {
-        name: "NextJS",
+        name: "Next.js",
         alt: "NextJS Logo",
         icon: "/icons/nextjs.svg"
     },
@@ -216,6 +221,11 @@ export const tools = [
         name: "Firebase",
         alt: "Firebase Logo",
         icon: "/icons/firebase.svg"
+    },
+    {
+        name: "Vercel",
+        alt: "Vercel Logo",
+        icon: "/icons/vercel.svg"
     },
     {
         name: "Figma",

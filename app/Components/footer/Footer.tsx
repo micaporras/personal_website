@@ -16,13 +16,13 @@ function Footer() {
 
           <Socials 
           icon={<RiInstagramFill />} 
-          href="https://www.facebook.com/micalorraine015" 
+          href="https://www.instagram.com/_micalorraine" 
           size={"small"}
           />
           
           <Socials 
           icon={<RiGithubFill />} 
-          href="https://github.com/mclrrn" 
+          href="https://github.com/micaporras" 
           size={"small"}
           />
 
@@ -34,7 +34,7 @@ function Footer() {
 
           <Socials 
           icon={<RiLinkedinBoxFill />} 
-          href="https://linkedin.com/in/mclrrn" 
+          href="https://www.linkedin.com/in/mica-lorraine-d-porras/" 
           size={"small"}
           />
         </div>
