@@ -81,7 +81,7 @@ export const projects = [
         website: "https://cpe-lems.web.app/user/form",
         isInGitHub: false,
         github: "https://gitlab.com/porrasmica15/lems",
-        isDeployed: true,
+        isDeployed: false,
     },
     {
         title: "Iris",

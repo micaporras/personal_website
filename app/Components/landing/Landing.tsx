@@ -71,7 +71,7 @@ function Landing() {
                     </button>
                     <a
                     className="flex flex-row justify-center items-center gap-2 px-3 py-2 bg-(--prim) text-white rounded-md hover:opacity-70 cursor-pointer"
-                    href = "https://drive.google.com/file/d/13I_SiWPLKhBoerWx50zRyMgnzqi4sNm1/view?usp=sharing" target="_blank" rel="noopener noreferrer"
+                    href = "https://drive.google.com/file/d/1_J3pWrWYjlPI6gqdguNc56CnCZuAqC9X/view?usp=sharing" target="_blank" rel="noopener noreferrer"
                     aria-label="Resume Link"
                     >
                         < RiExternalLinkLine className="h-5 w-5"/> Resume
